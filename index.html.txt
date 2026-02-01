@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Shreyaaa ❤️</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: pink;
+    text-align: center;
+    padding: 20px;
+}
+.page {
+    display: none;
+}
+.active {
+    display: block;
+}
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+}
+img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Page 1 -->
+<div class="page active">
+<h1>Shreyaaa! 💕</h1>
+<h2>Will you be my Valentine?</h2>
+<button onclick="nextPage(1)">Yes ❤️</button>
+<button onclick="nextPage(1)">Definitely Yes 💖</button>
+</div>
+
+<!-- Page 2 -->
+<div class="page">
+<h2>Our First Date 💕</h2>
+<p>Our first date… what we ate, what we laughed about, and how everything felt perfect.</p>
+<img src="first-date.jpg" alt="First Date Photo">
+<br>
+<button onclick="nextPage(2)">Next ❤️</button>
+</div>
+
+<!-- Page 3 -->
+<div class="page">
+<h2>Will you be mine forever? 💍</h2>
+<button onclick="nextPage(3)">Yes ❤️</button>
+<button onclick="nextPage(3)">Yes, from the bottom of my heart 💞</button>
+</div>
+
+<!-- Page 4 -->
+<div class="page">
+<h2>😂 One Important Thing</h2>
+<img src="amitabh-7cr.jpg" alt="7 Crores Meme">
+<p>Because our love is priceless… but 7 crores toh banta hai 😄</p>
+<button onclick="nextPage(4)">Continue 💖</button>
+</div>
+
+<!-- Page 5 -->
+<div class="page">
+<h2>Forever & Always 💖</h2>
+<img src="couple1.jpg">
+<img src="couple2.jpg">
+<p>
+Since you have reached this far, you deserve this beautiful message.<br><br>
+I love you so much and I promise to keep loving you forever.<br>
+Yes, we will marry one day and have kids.<br><br>
+Thank you for existing in my life, baby ❤️
+</p>
+</div>
+
+<script>
+function nextPage(n) {
+    document.getElementsByClassName("page")[n].classList.remove("active");
+    document.getElementsByClassName("page")[n+1].classList.add("active");
+}
+</script>
+
+</body>
+</html>
